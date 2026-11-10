@@ -11,7 +11,7 @@ del audio, texto en pantalla (OCR), frames y una imagen resumen (contact sheet).
 Requisitos: macOS, Python 3.9+ y ffmpeg (`brew install ffmpeg`).
 
 ```bash
-git clone https://github.com/YOUR_USER/reel-analyzer.git
+git clone https://github.com/basstypr/reel-analyzer.git
 cd reel-analyzer
 ./install.sh
 reel doctor

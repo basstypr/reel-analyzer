@@ -24,7 +24,7 @@ watching each one ten times.
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USER/reel-analyzer.git
+git clone https://github.com/basstypr/reel-analyzer.git
 cd reel-analyzer
 ./install.sh
 reel doctor
