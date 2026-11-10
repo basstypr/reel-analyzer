@@ -1,0 +1,16 @@
+#!/bin/bash
+# Lanzador del comando `reel`: usa el entorno virtual del proyecto.
+# Funciona desde cualquier carpeta y también a través de un enlace simbólico.
+SOURCE="${BASH_SOURCE[0]}"
+while [ -L "$SOURCE" ]; do
+  LINK_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ "$SOURCE" != /* ]] && SOURCE="$LINK_DIR/$SOURCE"
+done
+DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+
+if [ ! -x "$DIR/.venv/bin/python" ]; then
+  echo "❌ Falta instalar. Corre primero: $DIR/install.sh"
+  exit 1
+fi
+PYTHONPATH="$DIR" exec "$DIR/.venv/bin/python" -m reel_tool "$@"

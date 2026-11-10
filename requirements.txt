@@ -1,0 +1,9 @@
+yt-dlp
+pillow
+pytest
+# Apple Silicon
+mlx-whisper; platform_machine == "arm64"
+# Intel
+faster-whisper; platform_machine != "arm64"
+# OCR con Apple Vision
+ocrmac; sys_platform == "darwin"

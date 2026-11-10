@@ -1,0 +1,13 @@
+# Entorno y cachés
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+
+# Datos tuyos: nunca se suben
+output/
+config.json
+cookies.txt
+*cookies*.txt
+links.txt
+*.mp4

@@ -1,0 +1,4 @@
+# Un link por línea. Las líneas que empiezan con # se ignoran.
+# Copia este archivo como links.txt y pon tus propios links:
+https://www.instagram.com/reel/XXXXXXXXXXX/
+https://www.instagram.com/reel/YYYYYYYYYYY/
